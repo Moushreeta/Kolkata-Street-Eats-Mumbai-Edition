@@ -1,58 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff5733;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #f0f0f0;
+        }
+
+        section {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #ff5733;
+        }
+
+        footer {
+            background-color: #ff5733;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .chat-bot {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+            z-index: 1000;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px; /* or any other value */
+            padding: 0 20px; /* adding 20px of padding */
+        }
+
+        section img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-item {
+            margin: 20px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
     <title>Kolkata Street Eats: Mumbai Edition</title>
 </head>
-
 <body>
     <header>
+        <img src="Banner.JPG" alt="Kolkata Street Eats: Mumbai Edition">
         <h1>Kolkata Street Eats: Mumbai Edition</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Locations</a>
-            <a href="#">Contact</a>
-        </nav>
+        <p>Fast Food Delight in Subhasgram, Kolkata | Contact: 1234567890</p>
     </header>
 
-    <div class="container">
-        <section>
-            <img src="images/Banner.JPG" alt="Street Food in Mumbai">
-            <h2>Delicious Street Eats in Mumbai</h2>
-            <p>Explore the vibrant street food scene of Mumbai with flavors inspired by Kolkata!</p>
-        </section>
+    <nav>
+        <a onclick="scrollToSection('menu')">Menu</a>
+        <a onclick="scrollToSection('location')">Location</a>
+        <a onclick="scrollToSection('about')">About Us</a>
+        <a onclick="scrollToSection('contact')">Contact Us</a>
+    </nav>
 
-        <section>
+    <div class="container">
+        <section id="menu">
             <h2>Menu</h2>
             <div class="menu-item">
-                <img src="images/menu1.jpg" alt="Menu Item 1">
-                <button class="order-btn" data-item="Menu Item 1">Order Now</button>
+                <img src="menu1.jpg" alt="Pav Bhaji">
+                <p>Pav Bhaji</p>
             </div>
             <div class="menu-item">
-                <img src="images/menu2.jpg" alt="Menu Item 2">
-                <button class="order-btn" data-item="Menu Item 2">Order Now</button>
+                <img src="menu2.jpg" alt="Chole Bhature">
+                <p>Chole Bhature</p>
             </div>
             <div class="menu-item">
-                <img src="images/menu3.jpg" alt="Menu Item 3">
-                <button class="order-btn" data-item="Menu Item 3">Order Now</button>
+                <img src="menu3.jpg" alt="Pizza">
+                <p>Pizza</p>
             </div>
+            <!-- Add more menu items as needed -->
         </section>
-    </div>
 
-    <!-- Embed your chatbot iframe at the bottom -->
-    <div class="chat-bot-container">
-        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/796491b2-b127-48ab-89ac-3dc82a0c1f00"></iframe>
+        <section id="location">
+            <h2>Location</h2>
+            <p>Subhasgram, Kolkata</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <!-- You can add content about your restaurant here -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <!-- You can add a contact form or other contact information here -->
+        </section>
     </div>
 
     <footer>
-        <p>Subhasgram, Kolkata-700147</p>
+        <p>&copy; 2024 Kolkata Street Eats: Mumbai Edition</p>
     </footer>
 
-    <script src="main.js"></script>
-</body>
+    <!-- Chatbot iframe -->
+    <iframe class="chat-bot" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/796491b2-b127-48ab-89ac-3dc82a0c1f00"></iframe>
 
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
 </html>
