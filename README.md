@@ -4,7 +4,7 @@ Welcome to Kolkata Street Eats: Mumbai Edition! This repository contains the cod
 
 ## About Kolkata Street Eats
 
-Kolkata Street Eats brings the vibrant flavors of Kolkata to the streets of Mumbai. Explore our diverse menu inspired by the rich culinary traditions of Kolkata, offering a unique blend of spices and aromas.
+Kolkata Street Eats brings the vibrant flavors of Mumbai to the streets of Kolkata. Explore our diverse menu inspired by the rich culinary traditions of Mumbai, offering a unique blend of spices and aromas.
 
 ### Features
 
@@ -14,7 +14,7 @@ Kolkata Street Eats brings the vibrant flavors of Kolkata to the streets of Mumb
 
 ## Chatbot using Dialogflow
 
-We have integrated a chatbot powered by Dialogflow to enhance the user experience on our website. The chatbot allows customers to interact, ask questions, and even place orders seamlessly.
+I have integrated a chatbot powered by Dialogflow to enhance the user experience on our website. The chatbot allows customers to interact, ask questions, and even place orders seamlessly.
 
 ### Chatbot Link
 [Chatbot](https://bot.dialogflow.com/796491b2-b127-48ab-89ac-3dc82a0c1f00)
