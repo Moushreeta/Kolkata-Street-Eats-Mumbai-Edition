@@ -34,15 +34,4 @@ We have integrated a chatbot powered by Dialogflow to enhance the user experienc
 - **generic_helper.py:** Helper script for generic functions.
 - **main.py:** Main Python script for the website's backend.
 
-## Getting Started
 
-To run the website locally or make changes, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/your-username/Kolkata-Street-Eats-Mumbai-Edition.git`
-2. Open `index1.html` in your browser.
-
-Feel free to explore and contribute to the development of Kolkata Street Eats: Mumbai Edition!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
